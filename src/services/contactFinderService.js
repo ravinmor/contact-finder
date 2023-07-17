@@ -11,16 +11,14 @@ export default {
                 throw Error(err)
             });
 
-            const $ = load(data.data);
+        const $ = load(data.data);
+        const listLinks = $('a');
 
-            const footer = $('footer');
-            const listLinks = footer.find('a')
-
-            let links = [];
-            listLinks.each(function(index, value) {
-                if($(this).attr("href") !== undefined)
-                    links[index] = $(this).attr("href")
-            });
+        let links = [];
+        listLinks.each(function(index, value) {
+            if($(this).attr("href") !== undefined)
+                links[index] = $(this).attr("href")
+        });
 
         let domain = (new URL(url));
         const linksExtracted = {
