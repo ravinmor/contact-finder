@@ -28,7 +28,8 @@ export default {
                 youtube: links.filter(function (item) { return item.includes('youtube.com'); }),
                 linkedin: links.filter(function (item) { return item.includes('linkedin.com'); }),
                 facebook: links.filter(function (item) { return item.includes('facebook.com'); }),
-                pinterest: links.filter(function (item) { return item.includes('pinterest.com'); })
+                pinterest: links.filter(function (item) { return item.includes('pinterest.com'); }),
+                tiktok: links.filter(function (item) { return item.includes('tiktok.com'); })
             }
         }
 
